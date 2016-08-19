@@ -93,7 +93,7 @@ module MailyHerald
         }
       end
 
-      lookup_context.skip_default_locale!
+      #lookup_context.skip_default_locale!
       super(args[0], @maily_herald_entity)
 
       if @maily_herald_mailing
