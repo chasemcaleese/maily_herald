@@ -8,7 +8,7 @@ module MailyHerald
       content = @maily_herald_mailing.render_template(entity)
 
       opts = {
-        to: destination, 
+        to: destination,
         subject: subject
       }
       opts[:from] = @maily_herald_mailing.from if @maily_herald_mailing.from.present?
@@ -61,8 +61,6 @@ module MailyHerald
 
       super
     end
-
-    protected
 
     def process(*args) #:nodoc:
       class << @_message
